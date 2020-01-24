@@ -1,0 +1,153 @@
+git remote add origin https://github.com/ingJcbDev/ionic.git  //-- Para agregar el repositorio remoto 
+
+git config --list // se ve la configuracion del repositorio 
+
+-- se agreran usuario y contraseña
+
+git config --global user.email ing.jcb.dev@gmail.com 
+
+git config --global user.name ingJcbDev
+------------------------------------------------
+-- install angula cli
+npm install -g @angular/cli
+
+-- instalacion ionic 
+npm install -g cordova ionic
+
+-- crear proyecto
+
+
+----------------------------------- Error ----------------------------------------------
+
+ionic : No se puede cargar el archivo C:\Users\developer\AppData\Roaming\npm\ionic.ps1 porque la ejecución de
+scripts está deshabilitada en este sistema. Para obtener más información, consulta el tema
+about_Execution_Policies en https:/go.microsoft.com/fwlink/?LinkID=135170.
+En línea: 1 Carácter: 1
++ ionic start myApp tabs
++ ~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+	
+	
+Solucion ----------->
+
+Por tanto, el error es que en el sistema esta deshabilitada la ejecución de scripts. Si abrimos el Windows PowerShell 
+como administrador y ejecutamos el comando «Get-ExecutionPolicy» nos tendría que devolver «Unrestricted» o lo que es 
+lo mismo «Restringido». Para cambiar esta configuración basta con ejecutar «Set-ExecutionPolicy Unrestricted».	
+
+
+-- ejecutar el servidor 
+
+ionic serve
+
+-- version node 
+node -v
+
+-- version npm 
+npm -v
+
+------------------ reproducir audios ------------
+
+-- Crear proyecto en blanco
+
+ionic start sonidos blank
+
+-- Iniciar el server 
+
+ionic serve
+
+
+---------------------------------------------------------- Encontrado en internet ionic 5 ----------------------------------------------------
+
+Ionic 5
+Consume Servicio Web - Lista de Usuarios
+  https://reqres.in/api/users
+Resuelve issue git
+
+git pull --allow-unrelated-histories origin master
+Requerimientos para instalación Ionic 5
+Instalar nodeJs > 10
+Verificar versiones Node | Npm
+
+node --version 
+npm --version 
+Instalación Ionic
+
+npm install -g ionic 
+Crear App Ionic
+
+ionic start 
+Crear App Ionic con esqueletos
+
+ionic start nameapp sidemenu
+ionic start myApp tabs
+ionic start myApp blank
+Inicializar App en Ionic
+
+ionic serve 
+Emulador Ionic Android | Ios
+
+ionic serve --lab
+Verificar lista de templates en Ionic
+
+ionic start --list
+Otra manera | Crear App Ionic seleccionando esqueleto
+
+ionic start 
+Crear un servicio utilizando generadores
+
+ionic generate service services/bici-users
+Ciclo de vida de los componentes Ionic
+
+ionViewDidEnter
+Compilación para Android
+
+ionic cordova build android 
+https://ionicframework.com/docs/building/running
+
+Configuración Compilación Ubuntu
+
+Instalar JDK JAVA
+Instalar Android Studio 
+config variables entorno 
+
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04
+
+export ANDROID_HOME=/<installation location>/android-sdk-linux
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+config 
+https://stackoverflow.com/questions/36198165/failed-to-find-android-home-environment-variable
+
+
+sudo apt install openjdk-8-jdk-headless 
+
+https://www.vultr.com/docs/how-to-install-gradle-on-ubuntu-16-10
+
+export JAVA_HOME=/home/carlos/Downloads/sdkjava/jdk1.8.0_221
+
+gradle -v
+Configuración Compilación Windows 10
+
+Instalar JDK JAVA
+Instalar Android Studio 
+config variables entorno 
+https://www.youtube.com/watch?v=YVaGbwQephg
+
+C:\Users\xxxx\AppData\Local\Android\Sdk
+
+https://gradle.org/install/
+
+https://bryanlor.com/blog/gradle-tutorial-how-install-gradle-windows
+
+grandle -v
+
+https://www.flipandroid.com/no-se-puede-aceptar-el-acuerdo-de-licencia-android-sdk-platform-24.html
+
+Ir a Android \ sdk \ tools \ bin
+
+entonces corre
+
+sdkmanager --licenses
+
+---------------------------------------------------------- Encontrado en internet ionic 5 FIN ----------------------------------------------------
