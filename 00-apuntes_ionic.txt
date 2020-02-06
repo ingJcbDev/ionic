@@ -151,3 +151,13 @@ entonces corre
 sdkmanager --licenses
 
 ---------------------------------------------------------- Encontrado en internet ionic 5 FIN ----------------------------------------------------
+
+-- crea un proyecto 
+ionic start nombre
+
+-- inicia el servidor
+ionic serve
+
+-- ver como se ve en ios android
+
+ionic serve --lab
