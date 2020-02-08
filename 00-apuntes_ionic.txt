@@ -161,3 +161,18 @@ ionic serve
 -- ver como se ve en ios android
 
 ionic serve --lab
+
+-- para reconstruir los módulos de node con el comando npm install (ruta donde esta el directorio)
+
+npm install
+
+-- crear un nuevo proyecto de angular 
+
+ng new angularbases
+
+-- para iniciar el servidor angular 
+
+ng serve -o
+
+
+/*vamos en el video 3.3. Inicio del proyecto - AngularBases*/
