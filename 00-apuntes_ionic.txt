@@ -174,5 +174,30 @@ ng new angularbases
 
 ng serve -o
 
+--- crear componentes 
 
-/*vamos en el video 3.3. Inicio del proyecto - AngularBases*/
+-- ejecuta el comando pero no modifica los archivos
+
+-- g = generar
+-- c = componente
+
+ng g c pages/about --dry-run
+
+-- 
+
+ng g c pages/about
+
+-- crear manejador de rutas 
+
+-- g = generar
+-- m = modulo
+
+ng g m appRouting --dry-run
+
+-- para crearlo dentro de pages
+
+ng g m appRouting --flat
+
+
+
+/*3.5. Implementar las rutas de nuestra aplicación*/
