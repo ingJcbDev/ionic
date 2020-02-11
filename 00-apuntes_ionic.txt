@@ -199,5 +199,24 @@ ng g m appRouting --dry-run
 ng g m appRouting --flat
 
 
+-- crear menu 
 
-/*3.5. Implementar las rutas de nuestra aplicación*/
+ng g c components/menu
+
+
+-- Crear modulo para organizar los componentes 
+
+ng g m pages/pages --flat
+
+-- crear posts routing automatico
+
+ng g m pages/posts --routing
+
+ng g c pages/posts
+
+-- Crear un Servicio
+
+ng g s services/data --spec=false
+
+
+/*3.9. Servicios y data externa*/
