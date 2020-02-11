@@ -1,11 +1,11 @@
 <h1>Posts</h1>
 
 <ul>
-    <li *ngFor="let post of [1,1,1,1,1,1,1,1]" class="list-group-item">
+    <li *ngFor="let mensaje of mensajes | async" class="list-group-item">
 
-        <h2>Titulo</h2>
+        <h2>{{mensaje.title}}</h2>
         <p>
-            Hola Mundo
+            {{mensaje.body}}
         </p>
 
     </li>

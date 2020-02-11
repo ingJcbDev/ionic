@@ -219,4 +219,4 @@ ng g c pages/posts
 ng g s services/data --spec=false
 
 
-/*3.9. Servicios y data externa*/
+/*3.10. Mostrar POSTS en el componente*/
