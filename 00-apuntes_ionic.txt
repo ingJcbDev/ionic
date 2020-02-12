@@ -222,4 +222,10 @@ ng g s services/data --spec=false
 
 ng g c pages/posts/post --spect=false
 
-/**/
+
+
+******************************************* ionic **************************************
+
+ionic start componentes blank
+
+/* 4.3. Inicio del proyecto - Componentes */
