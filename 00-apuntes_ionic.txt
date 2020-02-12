@@ -218,5 +218,8 @@ ng g c pages/posts
 
 ng g s services/data --spec=false
 
+-- Crear un post 
 
-/*3.10. Mostrar POSTS en el componente*/
+ng g c pages/posts/post --spect=false
+
+/**/

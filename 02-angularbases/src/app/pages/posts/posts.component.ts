@@ -20,6 +20,11 @@ export class PostsComponent implements OnInit {
     //     console.log(posts);
     //     this.mensajes = posts;
     // });
+
+  }
+
+  escuchaClick( id: number ) {
+    console.log('Click en:', id);
   }
 
 }
