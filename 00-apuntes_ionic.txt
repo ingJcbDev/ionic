@@ -228,4 +228,23 @@ ng g c pages/posts/post --spect=false
 
 ionic start componentes blank
 
-/* 4.3. Inicio del proyecto - Componentes */
+-- crear pagina de inicio 
+
+ionic g page pages/inicio --dry--run
+
+-- crear paginas de alertas 
+
+ionic g page pages/alert --spec=false
+
+
+ionic g page pages/action-sheet --spec=false
+
+-- crear componentes
+
+ionic g m components --dry-run
+
+-- generar componente
+
+ionic g c components/header --spec=false
+
+/**/
