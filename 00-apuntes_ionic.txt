@@ -247,4 +247,4 @@ ionic g m components --dry-run
 
 ionic g c components/header --spec=false
 
-/**/
+/*5.6. ion-action-sheet*/
