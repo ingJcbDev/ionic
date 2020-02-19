@@ -247,4 +247,8 @@ ionic g m components --dry-run
 
 ionic g c components/header --spec=false
 
-/*5.7. ion-alert*/ 
+-- grear pagina de avatar
+
+ionic g page pages/avatar --spec=false
+
+/* 5.8. ion-avatar */ 

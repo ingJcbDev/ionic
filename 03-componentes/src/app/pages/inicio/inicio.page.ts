@@ -17,6 +17,11 @@ export class InicioPage implements OnInit {
       ico: 'beer',
       name: 'Alert',
       redirectTo: '/alert'
+    },
+    {
+      ico: 'beaker',
+      name: 'Avatar',
+      redirectTo: '/avatar'
     }
   ];
 
