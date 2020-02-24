@@ -251,4 +251,8 @@ ionic g c components/header --spec=false
 
 ionic g page pages/avatar --spec=false
 
-/* 5.8. ion-avatar */ 
+-- generar botones
+
+ionic generate page pages/botones --spec=false
+
+/*5.9. ion-button*/ 
