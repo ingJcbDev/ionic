@@ -255,4 +255,8 @@ ionic g page pages/avatar --spec=false
 
 ionic generate page pages/botones --spec=false
 
-/*5.9. ion-button*/ 
+-- generar card 
+
+ionic g page pages/card --spec=false
+
+/*5.10. ion-card*/ 
