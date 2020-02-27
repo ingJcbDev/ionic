@@ -259,4 +259,8 @@ ionic generate page pages/botones --spec=false
 
 ionic g page pages/card --spec=false
 
-/*5.10. ion-card*/ 
+-- generar check
+
+ionic g page pages/check --spec=false
+
+/*5.11. ion-checkbox*/ 
