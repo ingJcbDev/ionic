@@ -263,4 +263,8 @@ ionic g page pages/card --spec=false
 
 ionic g page pages/check --spec=false
 
-/*5.11. ion-checkbox*/ 
+-- generar formato de fecha y hora 
+
+ionic g page pages/dataTime --spec=false
+
+/*5.12. ion-datetime*/ 
