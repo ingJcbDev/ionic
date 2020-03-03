@@ -267,4 +267,4 @@ ionic g page pages/check --spec=false
 
 ionic g page pages/dataTime --spec=false
 
-/*5.12. ion-datetime*/ 
+/*5.13. ion-datetime - Parte 2 - Personalización*/ 
