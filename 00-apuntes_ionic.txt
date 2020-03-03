@@ -267,4 +267,8 @@ ionic g page pages/check --spec=false
 
 ionic g page pages/dataTime --spec=false
 
-/*5.13. ion-datetime - Parte 2 - Personalización*/ 
+-- generar fab 
+
+ionic g page pages/fab --spec=false
+
+/*5.14. ion-fab*/ 
