@@ -275,4 +275,8 @@ ionic g page pages/fab --spec=false
 
 ionic g page pages/grid --spec=false
 
+-- generar infiniteScroll
+
+ionic g page pages/infiniteScroll --spec=false
+
 /**/ 

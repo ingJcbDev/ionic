@@ -47,6 +47,11 @@ export class InicioPage implements OnInit {
       ico: 'grid',
       name: 'Grid - Rows',
       redirectTo: '/grid'
+    },
+    {
+      ico: 'infinite',
+      name: 'Infinite Scroll',
+      redirectTo: '/infinite-scroll'
     }
   ];
 
