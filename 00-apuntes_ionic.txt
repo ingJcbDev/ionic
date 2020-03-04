@@ -271,4 +271,8 @@ ionic g page pages/dataTime --spec=false
 
 ionic g page pages/fab --spec=false
 
-/*5.14. ion-fab*/ 
+-- generar grid 
+
+ionic g page pages/grid --spec=false
+
+/**/ 

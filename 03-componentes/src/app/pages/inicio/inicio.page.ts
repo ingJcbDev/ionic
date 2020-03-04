@@ -42,6 +42,11 @@ export class InicioPage implements OnInit {
       ico: 'car',
       name: 'Fabs',
       redirectTo: '/fab'
+    },
+    {
+      ico: 'grid',
+      name: 'Grid - Rows',
+      redirectTo: '/grid'
     }
   ];
 
