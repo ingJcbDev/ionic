@@ -8,10 +8,10 @@ import { IonInfiniteScroll } from '@ionic/angular';
 })
 export class InfiniteScrollPage implements OnInit {
 
-  @ViewChild(IonInfiniteScroll) infitniteScroll: IonInfiniteScroll; // para utilizar obj html
+  // @ViewChild(IonInfiniteScroll) infitniteScroll: IonInfiniteScroll;
+  @ViewChild( IonInfiniteScroll , {static: false} ) infitniteScroll: IonInfiniteScroll;
 
   data: any[] = Array(20);
-
   constructor() { }
 
   ngOnInit() {
