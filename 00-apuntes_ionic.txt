@@ -279,4 +279,8 @@ ionic g page pages/grid --spec=false
 
 ionic g page pages/infiniteScroll --spec=false
 
-/*5.18. ion-infinite-scroll*/ 
+-- generar input text 
+
+ionic g page pages/input --spec=false
+
+/**/ 
