@@ -283,4 +283,13 @@ ionic g page pages/infiniteScroll --spec=false
 
 ionic g page pages/input --spec=false
 
-/**/ 
+
+-- generar list 
+
+ionic g page pages/list --spec=false
+
+-- Crear un servicio
+
+ionic g service services/data --spec=false
+
+/*5.20. ion-list*/ 
