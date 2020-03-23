@@ -296,4 +296,8 @@ ionic g service services/data --spec=false
 
 ionic g page pages/list-reorder --spec=false
 
-/*5.22. ion-list-reorder*/ 
+-- Crear pagina loading
+
+ionic g page pages/loading --spec=false
+
+/*5.23. ion-loading*/ 
