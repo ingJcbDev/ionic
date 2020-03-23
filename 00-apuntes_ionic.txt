@@ -292,4 +292,8 @@ ionic g page pages/list --spec=false
 
 ionic g service services/data --spec=false
 
-/*5.21. ion-item-sliding*/ 
+-- crear list reload
+
+ionic g page pages/list-reorder --spec=false
+
+/*5.22. ion-list-reorder*/ 
