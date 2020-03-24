@@ -304,4 +304,4 @@ ionic g page pages/loading --spec=false
 
 ionic g c components/menu --spec=false
 
-/*5.24. ion-menu*/ 
+/*5.25. ion-menu parte 2 - opciones*/ 
