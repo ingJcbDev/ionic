@@ -63,5 +63,10 @@
       "ico": "refresh-circle",
       "name": "Loading",
       "redirectTo": "/loading"
+    },
+    {
+      "ico": "phone-portrait",
+      "name": "Modal",
+      "redirectTo": "/modal"
     }
   ]

@@ -304,4 +304,8 @@ ionic g page pages/loading --spec=false
 
 ionic g c components/menu --spec=false
 
-/*5.25. ion-menu parte 2 - opciones*/ 
+-- Crear modal
+
+ionic g page pages/modal --spec=false
+
+/*5.26. ion-modal*/ 

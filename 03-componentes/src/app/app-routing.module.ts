@@ -31,7 +31,8 @@ const routes: Routes = [
   {
     path: 'data-time',
     loadChildren: () => import('./pages/data-time/data-time.module').then( m => m.DataTimePageModule)
-  },  {
+  },
+  {
     path: 'fab',
     loadChildren: () => import('./pages/fab/fab.module').then( m => m.FabPageModule)
   },
@@ -59,7 +60,10 @@ const routes: Routes = [
     path: 'loading',
     loadChildren: () => import('./pages/loading/loading.module').then( m => m.LoadingPageModule)
   },
-
+  {
+    path: 'modal',
+    loadChildren: () => import('./pages/modal/modal.module').then( m => m.ModalPageModule)
+  },
 ];
 
 @NgModule({
