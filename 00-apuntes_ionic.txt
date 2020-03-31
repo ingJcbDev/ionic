@@ -308,4 +308,4 @@ ionic g c components/menu --spec=false
 
 ionic g page pages/modal --spec=false
 
-/*5.26. ion-modal*/ 
+/*5.27. ion-popover*/ 
