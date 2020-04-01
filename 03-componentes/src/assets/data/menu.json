@@ -68,5 +68,10 @@
       "ico": "phone-portrait",
       "name": "Modal",
       "redirectTo": "/modal"
+    },
+    {
+      "ico": "tablet-portrait",
+      "name": "Popover",
+      "redirectTo": "/popover"
     }
   ]

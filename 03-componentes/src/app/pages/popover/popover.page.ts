@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { PopinfoComponent } from '../../components/popinfo/popinfo.component';
 
 @Component({
   selector: 'app-popover',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopoverPage implements OnInit {
 
-  constructor() { }
+  constructor(private popoverCtrl: PopoverController) { }
 
   ngOnInit() {
+  }
+
+  async mostrarPop() {
+
+    const popover = await this.popoverCtrl.create({
+      component: PopinfoComponent,
+    });
+
+    await popover.present();
+
   }
 
 }
