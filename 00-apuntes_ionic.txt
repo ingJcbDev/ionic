@@ -326,4 +326,10 @@ ionic g page pages/refresher --spec=false
 
 ionic g page pages/searchbar --spec=false
 
+-- pipes 
+
+ionic g m pipes
+
+ionic g pipe pipes/filtro --spec=false
+
 /*5.31. ion-searchbar*/ 

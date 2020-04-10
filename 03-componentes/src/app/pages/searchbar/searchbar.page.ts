@@ -9,6 +9,7 @@ import { DataService } from '../../services/data.service';
 export class SearchbarPage implements OnInit {
 
   albumes: any[] = [];
+  textBuscar = '';
 
   constructor(private dataServices: DataService) { }
 
@@ -21,7 +22,8 @@ export class SearchbarPage implements OnInit {
   }
 
   buscar(event) {
-    console.log(event);
+    // console.log(event);
+    this.textBuscar = event.detail.value;
   }
 
 }
