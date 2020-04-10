@@ -8,12 +8,17 @@ import { PopoverController } from '@ionic/angular';
 })
 export class PopinfoComponent implements OnInit {
 
+<<<<<<< HEAD
   items = Array(5);
+=======
+  items = Array(10);
+>>>>>>> 18673b19c6775a043abd587079f70ee893482f5d
 
   constructor(private popoverCtrl: PopoverController) { }
 
   ngOnInit() {}
 
+<<<<<<< HEAD
   onClick(valor: number) {
 
     console.log('item', valor);
@@ -22,6 +27,13 @@ export class PopinfoComponent implements OnInit {
       item: valor
     });
 
+=======
+  onClick( valor: number){
+    console.log('item', valor);
+    this.popoverCtrl.dismiss({
+      item: valor
+    });
+>>>>>>> 18673b19c6775a043abd587079f70ee893482f5d
   }
 
 }

@@ -314,4 +314,8 @@ ionic g page pages/popover --spec=false
 
 ionic g c components/popinfo --spec=false
 
+<<<<<<< HEAD
 /*5.28. ion-popover - Acciones y posicionamiento*/ 
+=======
+/*5.29. ion-progress-bar y ion-range*/ 
+>>>>>>> 18673b19c6775a043abd587079f70ee893482f5d
