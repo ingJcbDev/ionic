@@ -73,5 +73,10 @@
       "ico": "tablet-portrait",
       "name": "Popover",
       "redirectTo": "/popover"
+    },
+    {
+      "ico": "code-working",
+      "name": "ProgressBar - Range",
+      "redirectTo": "/progress-bar"
     }
   ]
