@@ -322,4 +322,8 @@ ionic g page pages/progressBar --spec=false
 
 ionic g page pages/refresher --spec=false
 
-/*5.30. ion-refresher*/ 
+-- searchbar
+
+ionic g page pages/searchbar --spec=false
+
+/*5.31. ion-searchbar*/ 

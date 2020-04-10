@@ -83,5 +83,10 @@
       "ico": "refresh",
       "name": "Refresher",
       "redirectTo": "/refresher"
+    },
+    {
+      "ico": "search",
+      "name": "Searchbar",
+      "redirectTo": "/searchbar"
     }
   ]
