@@ -314,4 +314,4 @@ ionic g page pages/popover --spec=false
 
 ionic g c components/popinfo --spec=false
 
-/*5.27. ion-popover*/ 
+/*5.28. ion-popover - Acciones y posicionamiento*/ 
