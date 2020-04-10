@@ -318,4 +318,8 @@ ionic g c components/popinfo --spec=false
 
 ionic g page pages/progressBar --spec=false
 
-/*5.29. ion-progress-bar y ion-range*/ 
+-- refresher
+
+ionic g page pages/refresher --spec=false
+
+/*5.30. ion-refresher*/ 

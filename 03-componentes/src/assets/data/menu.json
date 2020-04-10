@@ -78,5 +78,10 @@
       "ico": "code-working",
       "name": "ProgressBar - Range",
       "redirectTo": "/progress-bar"
+    },
+    {
+      "ico": "refresh",
+      "name": "Refresher",
+      "redirectTo": "/refresher"
     }
   ]
