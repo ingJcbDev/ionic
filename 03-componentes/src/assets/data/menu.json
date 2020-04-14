@@ -88,5 +88,10 @@
       "ico": "search",
       "name": "Searchbar",
       "redirectTo": "/searchbar"
+    },
+    {
+      "ico": "copy",
+      "name": "segment",
+      "redirectTo": "/segment"
     }
   ]

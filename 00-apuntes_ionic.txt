@@ -332,4 +332,8 @@ ionic g m pipes
 
 ionic g pipe pipes/filtro --spec=false
 
-/*5.31. ion-searchbar*/ 
+-- segment
+
+ionic g page pages/segment --spec=false
+
+/*5.33. ion-segment*/ 
