@@ -3,7 +3,7 @@
 <ion-toolbar>
 
   <!-- Default Segment -->
-<ion-segment (ionChange)="segmentChanged($event)" color="tertiary">
+<ion-segment (ionChange)="segmentChanged($event)" color="tertiary" value="todos">
 
   <ion-segment-button value="todos">
     <ion-label>Todos</ion-label>
@@ -19,8 +19,21 @@
 
 </ion-segment>
 
+
 </ion-toolbar>
 
 <ion-content>
-
+  <ion-list>
+    <ion-item *ngFor="let heroe of (superHeroes | async) | filtro: publisher:'publisher'" class="animated fade fast">
+      <ion-label>
+        <h3>{{heroe.superhero}} <small>{{heroe.alter_ego}}</small></h3>
+        <p>
+          {{heroe.first_appearance}}
+        </p>
+      </ion-label>
+      <ion-label slot="end" text-right>
+        {{heroe.publisher}}
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
