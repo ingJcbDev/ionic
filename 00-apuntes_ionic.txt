@@ -336,4 +336,8 @@ ionic g pipe pipes/filtro --spec=false
 
 ionic g page pages/segment --spec=false
 
-/*5.34. ion-skeleton-text*/ 
+-- slides 
+
+ionic g page pages/slides --spec=false
+
+/*5.35. ion-slides*/ 

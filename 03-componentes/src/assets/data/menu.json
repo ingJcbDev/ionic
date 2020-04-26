@@ -93,5 +93,10 @@
       "ico": "copy",
       "name": "segment",
       "redirectTo": "/segment"
+    },
+    {
+      "ico": "albums",
+      "name": "Slides",
+      "redirectTo": "/slides"
     }
   ]
