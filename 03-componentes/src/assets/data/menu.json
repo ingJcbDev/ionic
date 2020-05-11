@@ -98,5 +98,10 @@
       "ico": "albums",
       "name": "Slides",
       "redirectTo": "/slides"
+    },
+    {
+      "ico": "cog",
+      "name": "Tabs",
+      "redirectTo": "/tabs"
     }
   ]
