@@ -102,6 +102,7 @@
     {
       "ico": "cog",
       "name": "Tabs",
-      "redirectTo": "/tabs"
+      "_comment": "redirectTo -> /tabs/account -> forzar a que en tabs inicie la pagina de account",
+      "redirectTo": "/tabs/account"
     }
   ]
