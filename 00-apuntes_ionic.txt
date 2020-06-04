@@ -344,6 +344,6 @@ ionic g page pages/slides --spec=false
 
 ionic g page pages/tabs --spec=false
 
-/*5.38. ion-toast*/ 
+/*6.3. DevApp - Pre-requisitos*/ 
 
 
