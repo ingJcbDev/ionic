@@ -362,3 +362,23 @@ ionic cordova build android
 
 ionic cordova platform remove android
 
+-- para intall cordova global 
+
+npm install cordova -g
+
+-- install native
+
+npm i -g native-run
+
+-- lista de dispositivos
+
+ionic cordova run android --list
+
+-- ejecuta el dispositivo por defecto
+
+ionic cordova run android --list
+
+-- ejecutar en un dispositivo especifico de la lista
+
+ionic cordova run android --target=NombreDelDispositivo -l
+
