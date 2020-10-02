@@ -382,3 +382,16 @@ ionic cordova run android --list
 
 ionic cordova run android --target=NombreDelDispositivo -l
 
+
+
+----------------------------------------------------------------------------------------------------
+                                      Noticias
+----------------------------------------------------------------------------------------------------
+
+-- Para Crear el proyecto
+ionic start 04-noticias tabs
+
+-- news api
+https://newsapi.org/
+Registration complete
+Your API key is: d268e175440744edbba4a0b3bffecfbe
