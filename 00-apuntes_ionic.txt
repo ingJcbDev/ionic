@@ -395,3 +395,7 @@ ionic start 04-noticias tabs
 https://newsapi.org/
 Registration complete
 Your API key is: d268e175440744edbba4a0b3bffecfbe
+
+-- crear servicio sin el archivo de pruebas 
+
+ionic g s services/noticias --skipTests=true
