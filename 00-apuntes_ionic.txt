@@ -317,3 +317,5 @@ ionic g c components/noticias
 
 -- crear componente de noticia
 ionic g c components/noticia
+
+-- 7.9. Página de encabezados
