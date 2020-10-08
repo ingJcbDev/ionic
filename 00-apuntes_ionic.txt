@@ -319,3 +319,6 @@ ionic g c components/noticias
 ionic g c components/noticia
 
 -- 7.9. Página de encabezados
+
+-- 7.10. Cargar noticias por categoría - Servicio
+
