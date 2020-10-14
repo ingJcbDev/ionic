@@ -1,0 +1,41 @@
+-- instalar las dependencias node
+npm install
+
+-- desplegar en la plataforma 
+ionic cordova platform add ios
+ionic cordova platform add android
+
+-- Reemplazar en el resources los png
+-- Para cambiar los iconos e imagenes del inicio de la app
+E:\Tutoriales\ionic_5\dev\10-noticias\resources\icon.png
+E:\Tutoriales\ionic_5\dev\10-noticias\resources\splash.png
+
+-- Para generar las imagenes 
+npm i -g cordova-res
+ionic cordova resources --force
+
+
+
+/*
+Config.xml
+Nombre, ID y versión
+Config.xml para cambiar el nombre y el ID de la aplicación
+*/
+
+E:\Tutoriales\ionic_5\dev\10-noticias\config.xml
+
+<widget
+id="com.fernandoherrera.noticiasappdev"
+version="1.0.0" xmlns="http://www.w3.org/ns/
+widgets" xmlns:cdv="http://
+cordova.apache.org/ns/1.0">
+<name>Noticias</name>
+
+*****************
+Versión         *
+version=“1.0.0” *
+*****************
+
+-- Nota: Recuerden cambiar el email y la descripción de su aplicación
+
+
