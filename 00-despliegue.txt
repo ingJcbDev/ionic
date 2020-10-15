@@ -83,6 +83,36 @@ ionic cordova run android --list
 
 ionic cordova run android --target=NombreDelDispositivo -l
 
+-- (6) Para generar build de produccion
+
+ionic cordova build android --prod —-release
+
+-- (7) generar llave
+
+(7.1) En la barra de menú, haz clic en Build > Build > Generate Signed Bundle/APK.
+
+(7.2) En el cuadro de diálogo Generate Signed Bundle or APK, selecciona Android App Bundle o APK, y haz clic en Next.
+
+(7.3) En el campo Key store path, haz clic en Create new.
+
+-- ubicacion jks
+E:\Tutoriales\ionic_5\dev\Android Keys\10-noticias_Jcb\01-noticias_Jcb.jks
+
+-- key
+password:J0n13R13795@
+
+-- poner la misma contraseña a los dos
+
+(7.4) Ejecutar cmd 
+cd C:\Program Files\Java\jdk1.8.0_261\bin
+
+(7.5) Ejecutar en una sola linea en el cmd
+
+keytool -importkeystore -srckeystore 
+E:\Tutoriales\ionic_5\dev\Android_Keys\10-noticias_Jcb\noticiasJcb.jks -destkeystore
+E:\Tutoriales\ionic_5\dev\Android_Keys\10-noticias_Jcb\noticiasJcb.jks -deststoretype pkcs12 -destkeypass J0n13R13795@
+
+
 ****************************************************************************************
 *                                       Fin                                            *
 ****************************************************************************************
