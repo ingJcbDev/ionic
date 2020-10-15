@@ -1,20 +1,22 @@
--- instalar las dependencias node
+****************************************************************************************
+*                           Preparando pltaformas e iconos                             *
+****************************************************************************************
+
+-- (0) instalar las dependencias node
 npm install
 
--- desplegar en la plataforma 
-ionic cordova platform add ios
-ionic cordova platform add android
-
--- Reemplazar en el resources los png
+-- (1) Reemplazar en el resources los png
 -- Para cambiar los iconos e imagenes del inicio de la app
+-- para poder Reemplazar los iconos deben tener las mismas dimenciones
+
 E:\Tutoriales\ionic_5\dev\10-noticias\resources\icon.png
 E:\Tutoriales\ionic_5\dev\10-noticias\resources\splash.png
 
--- Para generar las imagenes 
+-- (2) Para generar las imagenes 
 npm i -g cordova-res
 ionic cordova resources --force
 
-
+-- (3) Para poner la version y otras configuraciones ID app
 
 /*
 Config.xml
@@ -24,12 +26,11 @@ Config.xml para cambiar el nombre y el ID de la aplicación
 
 E:\Tutoriales\ionic_5\dev\10-noticias\config.xml
 
-<widget
-id="com.fernandoherrera.noticiasappdev"
-version="1.0.0" xmlns="http://www.w3.org/ns/
-widgets" xmlns:cdv="http://
-cordova.apache.org/ns/1.0">
-<name>Noticias</name>
+-- Ejemplo 
+<widget id="com.ingJcbDev.noticias" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Noticias JCB</name>
+    <description>App de noticias Prueba</description>
+    <author email="ing.jcb.dev@gmail.com" href="http://ionicframework.com/">Ionic Framework Team</author>
 
 *****************
 Versión         *
@@ -38,4 +39,51 @@ version=“1.0.0” *
 
 -- Nota: Recuerden cambiar el email y la descripción de su aplicación
 
+-- probar la app para finalizar este proceso
+
+****************************************************************************************
+*                                       Fin                                            *
+****************************************************************************************
+
+****************************************************************************************
+*                           Preparar para desplegar android                            *
+****************************************************************************************
+
+-- Para probar el aplicativo en un dispositivo **
+
+-- (1) para intall cordova global 
+
+npm install cordova -g
+
+-- (2) install native
+
+npm i -g native-run
+
+-- (3) Prepara el proyecto para android 
+
+ionic cordova prepare android
+
+-- (opcional 4) si se actualiza el gradle se debe eliminar y generar la nuevamente
+
+ionic cordova platform remove android
+
+-- (5) genera la version que se ejecuta en el android studie
+
+ionic cordova build android 
+
+-- (5.1) desplegar en la plataforma 
+ionic cordova platform add ios
+ionic cordova platform add android
+
+-- ejecuta el dispositivo por defecto
+
+ionic cordova run android --list
+
+-- ejecutar en un dispositivo especifico de la lista
+
+ionic cordova run android --target=NombreDelDispositivo -l
+
+****************************************************************************************
+*                                       Fin                                            *
+****************************************************************************************
 

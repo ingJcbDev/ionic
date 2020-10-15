@@ -4,17 +4,16 @@ import { NoticiasComponent } from './noticias/noticias.component';
 import { NoticiaComponent } from './noticia/noticia.component';
 import { IonicModule } from '@ionic/angular';
 
+
+
 @NgModule({
-  declarations: [
-    NoticiasComponent,
-    NoticiaComponent
-  ],
-  exports: [
-    NoticiasComponent
-  ],
+  declarations: [NoticiasComponent, NoticiaComponent],
   imports: [
     CommonModule,
     IonicModule
+  ],
+  exports: [
+    NoticiasComponent
   ]
 })
 export class ComponentsModule { }

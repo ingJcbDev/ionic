@@ -253,32 +253,31 @@ ionic g page pages/tabs --spec=false
 /*6.3. DevApp - Pre-requisitos*/ 
 
 
+****************************************************************************************
+*                           Preparar para desplegar android                            *
+****************************************************************************************
 
 -- Para probar el aplicativo en un dispositivo **
 
--- Prepara el proyecto para android 
-
-ionic cordova prepare android
-
--- genera la version que se ejecuta en el android studie
-
-ionic cordova build android 
-
--- si se actualiza el gradle se debe eliminar y generar la nuevamente
-
-ionic cordova platform remove android
-
--- para intall cordova global 
+-- (1) para intall cordova global 
 
 npm install cordova -g
 
--- install native
+-- (2) install native
 
 npm i -g native-run
 
--- lista de dispositivos
+-- (3) Prepara el proyecto para android 
 
-ionic cordova run android --list
+ionic cordova prepare android
+
+-- (4) si se actualiza el gradle se debe eliminar y generar la nuevamente
+
+ionic cordova platform remove android
+
+-- (5) genera la version que se ejecuta en el android studie
+
+ionic cordova build android 
 
 -- ejecuta el dispositivo por defecto
 
@@ -288,7 +287,9 @@ ionic cordova run android --list
 
 ionic cordova run android --target=NombreDelDispositivo -l
 
-
+****************************************************************************************
+*                                       Fin                                            *
+****************************************************************************************
 
 ----------------------------------------------------------------------------------------------------
                                       Noticias
