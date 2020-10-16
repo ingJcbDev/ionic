@@ -5,16 +5,27 @@
 -- (0) instalar las dependencias node
 npm install
 
--- (1) Reemplazar en el resources los png
+-- (1) Para generar las imagenes 
+npm i -g cordova-res
+ionic cordova resources --force
+
+-- (2) Reemplazar en el resources los png
 -- Para cambiar los iconos e imagenes del inicio de la app
 -- para poder Reemplazar los iconos deben tener las mismas dimenciones
 
 E:\Tutoriales\ionic_5\dev\10-noticias\resources\icon.png
 E:\Tutoriales\ionic_5\dev\10-noticias\resources\splash.png
 
--- (2) Para generar las imagenes 
-npm i -g cordova-res
+
+-- (2.1) desplegar en la plataforma 
+ionic cordova platform add ios
+ionic cordova platform add android
+
+
+--- (2.2) se ejecuta nuevamente
+
 ionic cordova resources --force
+
 
 -- (3) Para poner la version y otras configuraciones ID app
 
@@ -69,11 +80,7 @@ ionic cordova platform remove android
 
 -- (5) genera la version que se ejecuta en el android studie
 
-ionic cordova build android 
-
--- (5.1) desplegar en la plataforma 
-ionic cordova platform add ios
-ionic cordova platform add android
+ionic cordova build android
 
 -- ejecuta el dispositivo por defecto
 
@@ -87,7 +94,7 @@ ionic cordova run android --target=NombreDelDispositivo -l
 
 ionic cordova build android --prod —-release
 
--- (7) generar llave
+-- (7) generar llave android studio
 
 (7.1) En la barra de menú, haz clic en Build > Build > Generate Signed Bundle/APK.
 
@@ -100,6 +107,9 @@ E:\Tutoriales\ionic_5\dev\Android Keys\10-noticias_Jcb\01-noticias_Jcb.jks
 
 -- key
 password:J0n13R13795@
+
+-- key dusoftMovil
+password:S1N3RG1@S
 
 -- poner la misma contraseña a los dos
 
