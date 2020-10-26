@@ -127,3 +127,35 @@ E:\Tutoriales\ionic_5\dev\Android_Keys\10-noticias_Jcb\noticiasJcb.jks -deststor
 *                                       Fin                                            *
 ****************************************************************************************
 
+****************************************************************************************
+*                                       PWA                                            *
+****************************************************************************************
+-- Prepara la pwa
+ng add @angular/pwa
+
+-- Comprime la pwa para produccion
+ionic build --prod --service-worker
+
+-- para realizar la prueba se puede instalar un hosting local 
+npm install --global http-server
+
+
+
+-- para desplegar en firebase --
+-- instalar las herramientas
+
+npm install -g firebase-tools
+
+firebase login
+
+firebase init
+
+firebase use --add ionic-curso-c63db
+
+firebase deploy
+
+
+
+****************************************************************************************
+*                                       PWA Fin                                        *
+****************************************************************************************

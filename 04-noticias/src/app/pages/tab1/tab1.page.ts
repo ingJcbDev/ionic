@@ -7,19 +7,41 @@ import { Article } from '../interfaces/interfaces';
   templateUrl: 'tab1.page.html',
   styleUrls: ['tab1.page.scss']
 })
-export class Tab1Page implements OnInit{
+export class Tab1Page implements OnInit {
 
   noticias: Article[] = [];
 
-  constructor(private noticiasService: NoticiasService) {}
+  constructor(private noticiasService: NoticiasService) { }
 
-  ngOnInit(){
+  ngOnInit() {
+    this.cargarNoticias();
+  }
+
+  loadData(event) {
+    console.log(event);
+    this.cargarNoticias(event);
+  }
+
+  cargarNoticias(event?){
     this.noticiasService.getTopHeadLines()
-    .subscribe(resp => {
-      //console.log('Noticias', resp);
-      //this.noticias = resp.articles;
-      this.noticias.push( ...resp.articles );
-    });
+      .subscribe(resp => {
+        console.log('Noticias', resp);
+        //this.noticias = resp.articles;
+
+        if (resp.articles.length === 0){
+          event.target.disabled = true;
+          event.target.complete();
+          return;
+        }
+
+
+        this.noticias.push(...resp.articles);
+      });
+
+    /* Para cuando no hay mas datos pare el infinite-scroll */
+    if (event){
+        event.target.complete();
+      }
   }
 
 }

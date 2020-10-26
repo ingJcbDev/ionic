@@ -1,11 +1,11 @@
-import { HttpClientModule, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { RespuestaToHeadLines } from '../pages/interfaces/interfaces';
 import { environment } from 'src/environments/environment';
 
 const apiKey = environment.apiKey;
 const apiUrl = environment.apiUrl;
+
 
 const headers = new HttpHeaders({
   'X-Api-key': apiKey
@@ -16,6 +16,8 @@ const headers = new HttpHeaders({
 })
 export class NoticiasService {
 
+  headLinesPages = 0;
+
   constructor(private http: HttpClient ) { }
 
   private ejecutarQuery<T>(query: string){
@@ -24,7 +26,8 @@ export class NoticiasService {
   }
 
   getTopHeadLines(){
-    return this.ejecutarQuery<RespuestaToHeadLines>(`/top-headlines?country=co`);
+    this.headLinesPages++;
+    return this.ejecutarQuery<RespuestaToHeadLines>(`/top-headlines?country=co&page=${this.headLinesPages}`);
   }
   getTopHeadLinesCategoria( categoria: string ){
     return this.ejecutarQuery<RespuestaToHeadLines>(`/top-headlines?country=co&category=${categoria}`);

@@ -324,3 +324,5 @@ ionic g c components/noticia
 -- 7.10. Cargar noticias por categoría - Servicio
 
 -- 7.11. Mostrar encabezados dependiendo de la categoría
+
+-- 7.12. Implementar infinite-scroll - TopHeadlines
