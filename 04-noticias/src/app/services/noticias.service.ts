@@ -18,6 +18,9 @@ export class NoticiasService {
 
   headLinesPages = 0;
 
+  categoriaActual = '';
+  categoriaPage = 0;
+
   constructor(private http: HttpClient ) { }
 
   private ejecutarQuery<T>(query: string){
@@ -30,6 +33,14 @@ export class NoticiasService {
     return this.ejecutarQuery<RespuestaToHeadLines>(`/top-headlines?country=co&page=${this.headLinesPages}`);
   }
   getTopHeadLinesCategoria( categoria: string ){
+
+    if (this.categoriaActual === categoria){
+      this.categoriaPage++;
+    }else{
+      this.categoriaPage = 1;
+      this.categoriaActual = categoria;
+    }
+
     return this.ejecutarQuery<RespuestaToHeadLines>(`/top-headlines?country=co&category=${categoria}`);
   }
 

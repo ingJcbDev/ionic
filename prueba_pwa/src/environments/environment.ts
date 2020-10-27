@@ -3,8 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  message: 'hello prod'
 };
+
+export const SERVER_URL = 'https://myprodserver.com/api';
 
 /*
  * For easier debugging in development mode, you can import the following file
