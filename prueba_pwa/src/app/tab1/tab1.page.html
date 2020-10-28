@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Ionic Forms</ion-title>
+    <ion-title>Ionic Enviroment</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>enviroment</ion-card-subtitle>
+      <ion-card-title>Enviroment</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-label>
+        {{env.production}}
+      </ion-label>
+      <br>
+      <ion-label>
+        {{env.message}}
+      </ion-label>
+      <br>
+      <ion-label>
+        {{url}}
+      </ion-label>
+    </ion-card-content>
+  </ion-card>  
+
+
+
 
 </ion-content>

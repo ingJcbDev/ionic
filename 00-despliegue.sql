@@ -111,6 +111,9 @@ password:J0n13R13795@
 -- key dusoftMovil
 password:S1N3RG1@S
 
+appsmoviles@dumianmedical.net
+Mapau2010apr
+
 -- poner la misma contraseña a los dos
 
 (7.4) Ejecutar cmd 

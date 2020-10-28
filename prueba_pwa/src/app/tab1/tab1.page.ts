@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { environment, SERVER_URL } from '../../environments/environment';
 
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -10,6 +11,8 @@ import { environment, SERVER_URL } from '../../environments/environment';
 })
 export class Tab1Page implements OnInit {
 
+  env = environment;
+  url = SERVER_URL;
 
   constructor() { }
 

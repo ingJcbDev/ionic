@@ -1,5 +1,7 @@
 {
   "name": "prueba_pwa",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
