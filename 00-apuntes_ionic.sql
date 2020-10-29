@@ -361,3 +361,12 @@ ionic g c components/noticia
 -- 7.12. Implementar infinite-scroll - TopHeadlines
 
 -- 7.13. Infinite-scroll - Por categorias
+
+-- 7.14. Abrir el sitio web de la noticia en el navegador del dispositivo
+
+-- native
+
+-- In App Browser
+
+ionic cordova plugin add cordova-plugin-inappbrowser
+npm install @ionic-native/in-app-browser
