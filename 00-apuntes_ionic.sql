@@ -370,3 +370,5 @@ ionic g c components/noticia
 
 ionic cordova plugin add cordova-plugin-inappbrowser
 npm install @ionic-native/in-app-browser
+
+-- 7.15. Mostrar action-sheet en las noticias
