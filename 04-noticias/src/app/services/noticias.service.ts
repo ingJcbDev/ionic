@@ -41,7 +41,10 @@ export class NoticiasService {
       this.categoriaActual = categoria;
     }
 
-    return this.ejecutarQuery<RespuestaToHeadLines>(`/top-headlines?country=co&category=${categoria}`);
+    // console.log('this.categoriaPage');
+    // console.log(this.categoriaPage);
+
+    return this.ejecutarQuery<RespuestaToHeadLines>(`/top-headlines?country=co&category=${categoria}&page=${this.categoriaPage}`);
   }
 
 }
