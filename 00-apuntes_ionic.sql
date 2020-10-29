@@ -372,3 +372,5 @@ ionic cordova plugin add cordova-plugin-inappbrowser
 npm install @ionic-native/in-app-browser
 
 -- 7.15. Mostrar action-sheet en las noticias
+
+-- 7.16. Compartir noticia en redes sociales y Whatsapp
