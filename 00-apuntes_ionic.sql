@@ -374,3 +374,20 @@ npm install @ionic-native/in-app-browser
 -- 7.15. Mostrar action-sheet en las noticias
 
 -- 7.16. Compartir noticia en redes sociales y Whatsapp
+
+-- native 
+
+-- Social Sharing
+
+ionic cordova plugin add cordova-plugin-x-socialsharing
+npm install @ionic-native/social-sharing
+
+-- 7.17. Guardar noticia en el dispositivo localmente
+
+-- Data Storage
+
+ionic cordova plugin add cordova-sqlite-storage
+npm install --save @ionic/storage
+
+-- crear servicio de almacenamiento en el local storage
+ionic g s services/dataLocal --skipTests=true
